@@ -61,13 +61,13 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-900 px-4">
       <Toaster position="top-center" />
-      <div className="w-full max-w-sm">
-        <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-brand-400">QuickGrocery</h1>
-          <p className="text-slate-400 mt-1 text-sm">Admin Panel</p>
-        </div>
+      <div className="w-full max-w-md -mt-16">
 
         <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow-xl">
+        <div className="text-center mb-8">
+          <img src="/AppLogoFull.png" alt="QuickGrocery" className="h-20 w-auto mx-auto opacity-80 my-8" />
+          <h1 className="mt-2 mb-1 text-2xl font-bold text-white">Admin App</h1>
+        </div>
           {step === 'identifier' ? (
             <form onSubmit={handleSendOtp} className="space-y-4">
               <div>
